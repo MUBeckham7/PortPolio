@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            position: fixed;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+
+        .image-container img {
+            height: auto;
+            cursor: pointer;
+            transition: transform 1.5s;
+        }
+
+        .image-container img:hover {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image/핀터레스트_흑고량이_잡아당긴거_일러스트-removebg-preview.png" alt="흑고양이 일러스트">
+    </div>
+</body>
+</html>
