@@ -20,16 +20,16 @@
             background-color: #ffffff;
             border: 1px solid #000000;
             transition: transform 1.5s;
-            transform: translateY(0); /* 초기 위치로 설정 */
+            transform: translateY(100%); /* 초기 위치를 화면 하단으로 설정 */
         }
 
         .image-container {
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-40%);
+            top: 50%;
+            left: 70%;
+            transform: translateX(-40%) translateY(-100%);
             width: 100%;
-            text-align: center;
+            /*text-align: center;*/
             transition: transform 1.5s;
         }
 
@@ -39,8 +39,8 @@
             cursor: pointer;
         }
 
-        .box:hover, .box:hover .image-container {
-            transform: translateY(calc(-100% + 40px));
+        .box:hover {
+            transform: translateY(-60%);
         }
     </style>
 </head>
