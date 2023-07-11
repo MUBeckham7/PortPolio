@@ -21,6 +21,8 @@
 }
 
 .picture img{
-    width:100px;
-    height:100px;
+    margin-right:10%;
+    align-items:center;
+    width:40%;
+    height:25%;
 }
