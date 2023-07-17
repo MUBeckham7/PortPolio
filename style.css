@@ -2,27 +2,66 @@
 
 .Gasoek-One{font-family: 'Gasoek One', sans-serif;}
 
+body{
+    background-color:#f4f4f5;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+.contain img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.contain p {
+    font-size: 32px;
+    margin-top:40px;
+    margin-left:10px;
+}
 
 .container{
+    width:640px;
+    margin:0 auto;
+}
+h1{
+    text-align: center;
+}
+.album{
+    height:400px;
+    width:640px;
+    overflow:hidden;
+}
+.images{
+    position:relative;
     display:flex;
-    align-items:center;
-    margin-top:-50px;
+    height:400px;
 }
-
-.container img{
-    margin-left:0%;
-    width:50px;
-    height:50px;
+img{
+    width:640px;
+    height:400px;
 }
-
-.container p{
-    font-size:50px;
-    margin-left:1px;
+button,button:active,button:focus{
+    width:100px;
+    height:30px;
+    border:none;
+    color:white;
+    background-color:teal;
+    outline:none;
 }
-
-.picture img{
-    margin-right:10%;
-    align-items:center;
-    width:40%;
-    height:25%;
+button:hover{
+    background-color:turquoise;
+}
+button:disabled{
+    background-color:gray;
+}
+.prev{
+    float:left;
+}
+.next{
+    float:right;
 }
