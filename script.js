@@ -17,13 +17,13 @@ function prev(){
   }
 }
 function next(){
-  if(curPos < 4){
+  if(curPos < 5){
     prevBtn.removeAttribute("disabled")
     postion -= IMAGE_WIDTH;
     images.style.transform = `translateX(${postion}px)`;
     curPos = curPos + 1;
   }
-  if(curPos == 4){
+  if(curPos == 5){
     nextBtn.setAttribute('disabled', 'true')
   }
 }
