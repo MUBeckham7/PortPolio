@@ -25,24 +25,27 @@ body{
 }
 
 .container{
-    width:640px;
-    margin:0 auto;
+    width:530px;
+    margin:auto;
 }
 h1{
     text-align: center;
 }
 .album{
+    position: absolute;
     height:400px;
-    width:640px;
+    width:530px;
+    right:50%;
+    transform: translateX(50%);
     overflow:hidden;
 }
 .images{
     position:relative;
     display:flex;
-    height:400px;
+    height:600px;
 }
 img{
-    width:640px;
+    width:530px;
     height:400px;
 }
 button,button:active,button:focus{
@@ -50,7 +53,7 @@ button,button:active,button:focus{
     height:30px;
     border:none;
     color:white;
-    background-color:teal;
+    background-color:black;
     outline:none;
 }
 button:hover{
@@ -60,8 +63,12 @@ button:disabled{
     background-color:gray;
 }
 .prev{
-    float:left;
+    position: absolute;
+  left: 50%;
+  transform: translateX(-265%);
 }
 .next{
-    float:right;
+    position: absolute;
+    right: 50%;
+    transform: translateX(265%);
 }
